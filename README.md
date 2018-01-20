@@ -3,7 +3,7 @@ Enumdb is brute force and post exploitation tool for MySQL and MSSQL databases. 
 
 By default enumdb will use newly found, or given, credentials to search the database and find tables containing sensitive information (usernames, passwords, ssn, credit cards, etc), taking the manual work out of post exploitation. The data will be copied to a .xlsx output file for further evaluation, listing one table per sheet. This output file can be changed to .csv using the command line arguments.
 
-Enumdb is written in python3, use the setup.sh script to ensure all required libraries are installed.
+*Enumdb is written in python3, use the setup.sh script to ensure all required libraries are installed.*
 
 ## Getting Started
 In the Linux terminal run:
