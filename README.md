@@ -6,25 +6,25 @@ By default enumdb will use newly found, or given, credentials to look through th
 Enumdb is written in python3, use the setup.sh script to ensure all required libraries are installed.
 
 ## Getting Started
-In the Linux terminal type:
-* git clone https://github.com/m8r0wn/enumdb
-* sudo chmod +x enumdb/setup.sh
-* sudo ./enumdb/setup.sh
+In the Linux terminal run:
+1. git clone https://github.com/m8r0wn/enumdb
+2. sudo chmod +x enumdb/setup.sh
+3. sudo ./enumdb/setup.sh
 
 ## Usage
-Connect to a MySQL database and enumerate tables writing output to xlsx:<br>
-`python3 enumdb.py -u root -p '' -t mysql 10.11.1.30`
+* Connect to a MySQL database and enumerate tables writing output to xlsx:<br>
+`bash python3 enumdb.py -u root -p '' -t mysql 10.11.1.30`
 
-Connect to a MSSQL database using a domain username and enumerate tables writing output to xlsx:<br>
+* Connect to a MSSQL database using a domain username and enumerate tables writing output to xlsx:<br>
 `python3 enumdb.py -u 'domain\\user' -p Winter2018 -t mysql 10.11.1.30`
 
-Connect to MySQL database and enumerate tables writing output to csv:<br>
+* Connect to MySQL database and enumerate tables writing output to csv:<br>
 `python3 enumdb.py -u root -p SecretPass! -t mysql -csv 10.0.0.1`
 
-Brute force MSSQL sa account login. Once valid credentials are found, enumerate data writing output to xlsx:<br>
+* Brute force MSSQL sa account login. Once valid credentials are found, enumerate data writing output to xlsx:<br>
 `python3 enumdb.py -u sa -P passwords.txt -t mssql 192.168.10.10`
 
-Brute force MSSQL sa account login without enumerating data or logging output:<br>
+* Brute force MSSQL sa account login without enumerating data or logging output:<br>
 `python3 enumdb.py -u sa -P passwords.txt -t mssql -brute 192.168.10.10`
 
 ## All Options
